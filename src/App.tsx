@@ -4,6 +4,7 @@ import { ActionBar, DetailsModal, Header, Table } from './components';
 import { Container } from './styles';
 
 export const App = () => {
+  const [items, setItems] = useState<ShopItem[]>([]);
   const [isDetailsModalOpen, setIsDetailsModalOpen] = useState(false)
   const [isAddNewDetailsModalOpen, seIsAddNewDetailsModalOpen] = useState(false);
 
